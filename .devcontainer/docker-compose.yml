@@ -3,7 +3,7 @@ services:
   devcontainer:
     build:
       context: ..
-      dockerfile: .devcontainer/Dockerfile
-    command: sleep infinity
+      dockerfile: .devcontainer/shell-container/Dockerfile
+    command: /home/vscode/container-start-script.sh
     volumes:
       - ../..:/workspaces:cached
