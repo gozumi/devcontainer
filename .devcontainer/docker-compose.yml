@@ -7,3 +7,4 @@ services:
     command: /home/vscode/container-start-script.sh
     volumes:
       - ../..:/workspaces:cached
+      - ~/.gitconfig:/home/vscode/.gitconfig
